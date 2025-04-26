@@ -45,6 +45,12 @@ export default function RootLayout() {
             title: 'Current Round',
           }}
         />
+        <Stack.Screen
+          name="history"
+          options={{
+            title: 'Round History',
+          }}
+        />
       </Stack>
     </SafeAreaProvider>
   );

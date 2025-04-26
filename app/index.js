@@ -128,6 +128,13 @@ export default function HomeScreen() {
           >
             <Text style={styles.buttonText}>Set Round Goals</Text>
           </TouchableOpacity>
+          
+          <TouchableOpacity
+            style={styles.historyButton}
+            onPress={() => router.push('/history')}
+          >
+            <Text style={styles.buttonText}>View History</Text>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </KeyboardAvoidingView>
@@ -209,6 +216,14 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  historyButton: {
+    backgroundColor: '#546e7a',
+    paddingVertical: 14,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 15,
   },
   buttonText: {
     color: '#fff',
